@@ -1,0 +1,142 @@
+$accent: rgb(97, 97, 97);
+$font-size: 1.3rem;
+$larger-size: 2rem;
+$small-font: 1rem;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+body {
+  // border: 1px solid rgb(223, 223, 223);
+  width: 600px;
+  max-width: 100%;
+  margin: auto;
+  font-weight: 400;
+  color: $accent;
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(255, 232, 241);
+}
+
+/*HEADER*/
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-weight: 300;
+  font-size: 3.1rem;
+  margin: 5rem 0 1rem 0;
+  z-index: 10;
+  position: relative;
+  color: $accent;
+  // text-shadow: 0 0 1px rgb(54, 54, 54);
+}
+
+nav {
+  display: flex;
+  margin: 0 2rem;
+}
+
+#avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: rgb(199, 255, 246);
+  z-index: 15;
+  box-shadow: 0px 0px 2px 2px rgb(238, 176, 214);
+}
+
+.link-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: $font-size;
+  margin-top: -2.5rem;
+  color: $accent;
+  font-weight: 500;
+  background-image: linear-gradient(transparent calc(100% - 2px),#ffb4e8 1px);
+  text-decoration: none;
+  background-size: 100% 100%;
+  background-position: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  transition: all .2s;
+}
+
+nav a:hover {
+  background-size: 0 100%;
+}
+
+/*HOME*/
+main {
+  height: 40vh;
+  overflow: scroll;
+  padding: 2rem;
+  border: 1px solid rgb(238, 176, 214);
+  box-shadow: 0px 0px 2px 1px rgba(238, 176, 214, 0.767);
+  border-radius: 10px;
+  background-color: white;
+  margin-top: -3rem;
+  font-size: $font-size;
+}
+
+#home-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#home-container p {
+  margin-top: 0;
+}
+
+footer {
+  margin: 0 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons {
+  width: 2.5rem;
+}
+
+/*projects*/
+#project-container {
+  font-size: $font-size;
+  // height: 100%;
+  // width: 100%;
+}
+
+#projects-header {
+  font-size: $larger-size;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+.project-name {
+  font-weight: 500;
+  font-size: $font-size;
+  display: inline;
+  background-color: #ffd7e6;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+#project-container p {
+  margin: .5rem 0;
+  // text-align: justify;
+}
+
+.repo-demo-container {
+  display: flex;
+  justify-content: space-evenly;
+}
