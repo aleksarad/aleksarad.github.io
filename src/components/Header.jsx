@@ -4,21 +4,25 @@ import avatar from "../images/avatar2.png"
 
 function Header() {
   let projects = useRouteMatch("/projects")
+  let contact = useRouteMatch("/contact")
   return (
     <header>
-        <h1>alexandra radevich</h1>
+        <h1>Alexandra Radevich</h1>
         <nav>
         <div className="link-container">
         { projects ? 
-            <Link to="/">home</Link> : 
-            <Link to="/projects">projects</Link> 
+            <Link className="link" to="/">Home</Link> : 
+            <Link className="link" to="/projects">Projects</Link> 
         }
         </div>
         <div className="link-container">
           <img id="avatar" src={avatar}></img>
         </div>
         <div className="link-container">
-          <a href="">contact</a>
+        { contact ? 
+            <Link className="link" to="/">Home</Link> : 
+            <Link className="link" to="/contact">Contact</Link> 
+        }
         </div>
         </nav>
     </header>
