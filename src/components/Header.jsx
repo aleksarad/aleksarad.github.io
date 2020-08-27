@@ -8,6 +8,7 @@ function Header() {
   return (
     <header>
         <h1>Alexandra Radevich</h1>
+        <div id="nav-wrapper">
         <nav>
         <div className="link-container">
         { projects ? 
@@ -25,6 +26,7 @@ function Header() {
         }
         </div>
         </nav>
+        </div>
     </header>
   );
 }

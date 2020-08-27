@@ -1,25 +1,47 @@
 $accent: rgb(75, 75, 75);
-$background-color: rgb(255, 240, 246);
-$pink-accent: rgb(255, 169, 205);
+// $background-color: rgb(230, 255, 251);
+// $pink-accent: rgb(131, 216, 202);
 $font-size: 1.3rem;
 $larger-size: 2rem;
 $small-font: 1.2rem;
+$background-color: rgb(255, 240, 246);
+$pink-accent: rgb(255, 169, 205);
+$mint-accent: rgb(199, 255, 246);
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 
 body {
   // border: 1px solid rgb(223, 223, 223);
+  font-weight: 400;
+  color: $accent;
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: $background-color;
+}
+
+main {
   width: 650px;
   max-width: 100%;
   margin: auto;
-  font-weight: 400;
-  color: $accent;
-  font-family: 'Roboto', sans-serif;
-  background-color: $background-color;
 }
+
+#content-wrapper {
+  overflow: auto;
+  height: 45vh;
+  padding: 2rem 2.5rem;
+  // border: 1px solid $pink-accent;
+  box-shadow: 0px 0px 3px 1px $pink-accent;
+  border-radius: 10px;
+  background-color: white;
+  margin-top: -3rem;
+  font-size: $font-size;
+}
+
 
 /*HEADER*/
 header {
@@ -27,27 +49,33 @@ header {
 }
 
 header h1 {
-  font-weight: 300;
-  font-size: 2.8rem;
-  margin: 4rem 0 1.3rem 0;
-  z-index: 10;
-  position: relative;
-  color: $accent;
-  // text-shadow: 0 0 5px rgb(109, 253, 234), 0 0 5px rgb(109, 253, 234), 0 0 5px rgb(109, 253, 234);
+  font-weight: 600;
+  font-size: 3rem;
+  width: 100%;
+  margin: 1.5rem 0 1rem 0;
+  color: $pink-accent;
+  text-shadow: 0 0 1px rgb(139, 38, 80), 0 0 2px rgb(168, 63, 107), 0 0 5px rgb(240, 151, 188);
+}
+
+#nav-wrapper {
+  width: 650px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 nav {
   display: flex;
-  margin: 0 4rem;
+  justify-content: space-around;
+  margin: 0 1.5rem;
 }
 
 #avatar {
-  width: 130px;
-  height: 130px;
+  width: 135px;
+  height: 135px;
   border-radius: 50%;
-  background-color: rgb(199, 255, 246);
+  background-color: $mint-accent;
   z-index: 15;
-  box-shadow: 0px 0px 2px 2px $pink-accent;
+  box-shadow: 0px 0px 3px 1px $pink-accent;
 }
 
 .link-container {
@@ -59,7 +87,7 @@ nav {
 
 nav a {
   font-size: $font-size;
-  margin-top: -2.5rem;
+  margin-top: -2rem;
 }
 
 .link {
@@ -80,17 +108,6 @@ nav a {
 }
 
 /*HOME*/
-main {
-  height: 40vh;
-  overflow: scroll;
-  padding: 2rem 3rem;
-  // border: 1px solid $pink-accent;
-  box-shadow: 0px 0px 3px 1px $pink-accent;
-  border-radius: 10px;
-  background-color: white;
-  margin-top: -3rem;
-  font-size: $font-size;
-}
 
 .centered-container {
   height: 100%;
@@ -119,6 +136,11 @@ footer {
 
 .icons {
   width: 2.5rem;
+  filter: opacity(80%);
+}
+
+.icons:hover {
+  filter: opacity(100%);
 }
 
 /*projects*/
@@ -138,8 +160,6 @@ footer {
 .project-name {
   font-weight: 400;
   font-size: 1.6rem;
-  // text-shadow: 0 0 2px rgb(238, 176, 214), 0 0 5px rgb(238, 176, 214);
-  padding: 2px 4px;
   border-radius: 3px;
   margin: 0;
 }
@@ -198,4 +218,66 @@ footer {
 
 .emphasis a {
   color: $accent;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 18px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px $pink-accent; 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  // background: rgb(255, 194, 219); 
+  border-radius: 7px;
+  background-color: #ffc2db;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.48' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ffcee2;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.31' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+
+@media (max-width: 425px) {
+
+  header h1 {
+    font-size: 3.2rem;
+  }
+
+  nav {
+    margin: 0;
+  }
+
+  #avatar {
+    height: 100px;
+    width: 100px;
+  }
+
+  nav a {
+    margin-top: -3rem;
+  }
+
+  #content-wrapper {
+    margin-top: -2.5rem;
+    height: 50vh;
+    padding: 1rem 1rem 0 1rem;
+    border: none;
+    box-shadow: none;
+  }
+
+  #projects-h1 {
+    margin: 1rem 0 1.5rem 0;
+  }
+
+  #project-container p {
+    font-size: 1.1rem;
+  }
 }
