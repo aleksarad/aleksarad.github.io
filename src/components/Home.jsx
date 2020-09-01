@@ -15,7 +15,7 @@ function Home() {
             I’m a Full-Stack Developer from Brooklyn, New York. 
         </p>
         <p>
-            I have experience building web applications with <span className="emphasis">Ruby on Rails</span>, <span className="emphasis">JavaScript</span>, and <span className="emphasis">React</span>. Check out my <Link className="link" to="/projects">work</Link>!
+            I come from a Human Resources and Project Management background and have experience building web applications with <span className="emphasis">Ruby on Rails</span>, <span className="emphasis">JavaScript</span>, and <span className="emphasis">React</span>. Check out my <Link className="link" to="/projects">work</Link>!
         </p>
     
     </div>
