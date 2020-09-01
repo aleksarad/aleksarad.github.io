@@ -7,7 +7,7 @@ function Header() {
   let contact = useRouteMatch("/contact")
   return (
     <header>
-        <h1>Alexandra Radevich</h1>
+        <h1>alexandra radevich</h1>
         <div id="nav-wrapper">
         <nav>
         <div className="link-container">
