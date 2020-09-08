@@ -31,7 +31,7 @@ main {
 
 #content-wrapper {
   overflow: auto;
-  height: 45vh;
+  height: 50vh;
   padding: 2rem 2.5rem;
   // border: 1px solid $pink-accent;
   box-shadow: 2px 1px 1px 1px $pink-accent;
@@ -49,13 +49,16 @@ header {
 
 header h1 {
   font-weight: 600;
-  // font-family: 'Alata', sans-serif;
   font-size: 4rem;
   width: 100%;
-  margin: 1.5rem 0 .5rem 0;
-  color: rgb(255, 203, 224);
-  // text-shadow: 1px 0 1px rgb(119, 23, 63), 1px 0 2px rgb(168, 63, 107), 1px 0 3px rgb(240, 151, 188), 1px 0 7px rgb(245, 177, 205);
+  margin: .8rem 0 .5rem 0;
+  color: rgb(255, 183, 212);
   text-shadow: 1px 1px 1px rgb(119, 23, 63), 1px 1px 1px rgb(180, 65, 113), 1px 0 3px rgb(236, 148, 185),  1px 0 7px rgb(255, 168, 204);
+}
+
+#home-link {
+  text-decoration: none;
+  box-shadow: 2px 1px 1px 1px greenyellow;
 }
 
 #nav-wrapper {
@@ -68,6 +71,14 @@ nav {
   display: flex;
   justify-content: space-around;
   margin: 0 1.5rem;
+}
+
+.selected {
+  font-size: $font-size;
+  color: $mint-accent;
+  // text-shadow: 0px 0px 2px $pink-accent, 1px 1px 2px rgb(182, 59, 110), 1px 1px 3px rgb(231, 106, 158);
+  text-shadow: 0px 0px 2px rgb(78, 175, 159), 1px 1px 2px rgb(90, 209, 189), 1px 1px 3px rgb(90, 209, 189);
+  margin-right: .4rem;
 }
 
 #avatar {
@@ -95,13 +106,13 @@ nav a {
   text-decoration: none;
   color: $accent;
   font-weight: 500;
-  background-image: linear-gradient(transparent calc(100% - 2px),$pink-accent 1px);
-  text-decoration: none;
-  background-size: 100% 100%;
-  background-position: 100%;
-  position: relative;
-  background-repeat: no-repeat;
-  transition: all .2s;
+  // background-image: linear-gradient(transparent calc(100% - 2px),$pink-accent 1px);
+  // text-decoration: none;
+  // background-size: 100% 100%;
+  // background-position: 100%;
+  // position: relative;
+  // background-repeat: no-repeat;
+  // transition: all .2s;
 }
 
 .link:hover {
@@ -157,8 +168,6 @@ footer {
 /*projects*/
 #project-container {
   font-size: $font-size;
-  // height: 100%;
-  // width: 100%;
 }
 
 #projects-h1 {
@@ -200,12 +209,13 @@ footer {
 }
 
 .repo-demo-container {
+  margin-top: 1.2rem;
   display: flex;
   justify-content: space-evenly;
 }
 
 .project {
-  margin-bottom: 2.5rem;
+  margin-bottom: 4rem;
 }
 
 .project a {
@@ -232,18 +242,18 @@ footer {
 }
 
 /* width */
-::-webkit-scrollbar {
-  width: 18px;
+#content-wrapper::-webkit-scrollbar {
+  width: 15px;
 }
 
 /* Track */
-::-webkit-scrollbar-track {
+#content-wrapper::-webkit-scrollbar-track {
   box-shadow: inset 0 0 1px $pink-accent; 
   border-radius: 5px;
 }
  
 /* Handle */
-::-webkit-scrollbar-thumb {
+#content-wrapper::-webkit-scrollbar-thumb {
   // background: rgb(255, 194, 219); 
   border-radius: 7px;
   background-color: #ffc2db;
@@ -251,7 +261,7 @@ footer {
 }
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+#content-wrapper::-webkit-scrollbar-thumb:hover {
   background-color: #ffcee2;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.31' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
