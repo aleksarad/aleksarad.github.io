@@ -33,7 +33,6 @@ main {
   overflow: auto;
   height: 50vh;
   padding: 2rem 2.5rem;
-  // border: 1px solid $pink-accent;
   box-shadow: 2px 1px 1px 1px $pink-accent;
   border-radius: 10px;
   background-color: white;
@@ -76,9 +75,18 @@ nav {
 .selected {
   font-size: $font-size;
   color: $mint-accent;
-  // text-shadow: 0px 0px 2px $pink-accent, 1px 1px 2px rgb(182, 59, 110), 1px 1px 3px rgb(231, 106, 158);
   text-shadow: 0px 0px 2px rgb(78, 175, 159), 1px 1px 2px rgb(90, 209, 189), 1px 1px 3px rgb(90, 209, 189);
-  margin-right: .4rem;
+  margin: 0 .4rem;
+  transition: color 400ms, text-shadow 500ms;
+}
+
+.heart-placeholder {
+  font-size: $font-size;
+  color: $background-color;
+  text-shadow: none;
+  margin: 0 .4rem;
+  transition: color 400ms, text-shadow 500ms;
+  cursor: default;
 }
 
 #avatar {

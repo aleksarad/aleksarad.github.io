@@ -50,12 +50,12 @@ function Projects() {
         <div className="project">
                 <section className="name-icon-container">
                     <h3 className="project-name">Pokemon Trainer</h3>
-                    <img src="https://img.icons8.com/color/48/000000/jigglypuff.png"/>
+                    <img src="https://img.icons8.com/color/48/000000/jigglypuff.png" alt="small pink icon of jigglypuff"/>
                 </section>
             <p>A charming CLI application that allows a user to teach moves to daycare pokemon. Complete with nostalgic sounds. Built with: <span className="emphasis">Ruby</span>, and <span className="emphasis">SQLite</span>.</p>
             <section className="repo-demo-container">
-                <a href="https://github.com/aleksarad/pokemon-trainer" target="_blank">Repo</a>
-                <a href="">Demo</a>
+                <a href="https://github.com/aleksarad/pokemon-trainer" target="_blank" rel="noopener noreferrer">Repo</a>
+                <a href="https://github.com/aleksarad/pokemon-trainer">Demo</a>
             </section>
         </div>
         <p style={{fontSize: '1rem', textAlign: 'center'}} id="project-footer">Portfolio designed and coded by me, check out the repo <span className="emphasis"><a href="https://github.com/aleksarad/aleksarad.github.io">here.</a></span></p>
