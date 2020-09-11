@@ -16,7 +16,7 @@ function Projects() {
             <section className="repo-demo-container">
                 <a href="https://github.com/aleksarad/glowlist-frontend" rel="noopener noreferrer" target="_blank">Repo</a>
                 <a href="https://glowlist.netlify.app/" rel="noopener noreferrer" target="_blank">Live</a>
-                <a href="https://www.loom.com/" target="_blank" rel="noopener noreferrer">Demo</a>
+                <a href="https://www.loom.com/share/9427770cfbdc4d27989265917ab46aab/" target="_blank" rel="noopener noreferrer">Demo</a>
             </section>
         </div>
         <div className="project">
@@ -30,7 +30,8 @@ function Projects() {
             <p>A full-stack drawing app, created with a partner, featuring account authentication and full CRUD. Users can work on their own doodles, or view the doodles of others. Built with: <span className="emphasis">Ruby on Rails</span>, <span className="emphasis">PostgreSQL</span> and <span className="emphasis">React</span>.</p>
             <section className="repo-demo-container">
                 <a href="https://github.com/aleksarad/doodl-frontend/tree/merge" target="_blank" rel="noopener noreferrer">Repo</a>
-                <a href="https://www.loom.com/" target="_blank" rel="noopener noreferrer">Demo</a>
+                <a href="https://doodl.netlify.app/" rel="noopener noreferrer" target="_blank">Live</a>
+                <a href="https://www.loom.com/share/0fc1e48dd76a45d99025f5b666c31430" target="_blank" rel="noopener noreferrer">Demo</a>
             </section>
         </div>
         <div className="project">
@@ -44,7 +45,7 @@ function Projects() {
             <p>A buzz-worthy social media app, created with a partner, in which users can create posts, like the post of others, follow others, and view trending posts. Built with: <span className="emphasis">Ruby on Rails</span>, and <span className="emphasis">SQLite</span>.</p>
             <section className="repo-demo-container">
                 <a href="https://github.com/aleksarad/the-hive" target="_blank" rel="noopener noreferrer">Repo</a>
-                <a href="https://www.loom.com/" target="_blank" rel="noopener noreferrer">Demo</a>
+                <a href="https://www.loom.com/share/9b05db1579874eaba5a43f77b090373d" target="_blank" rel="noopener noreferrer">Demo</a>
             </section>
         </div>
         <div className="project">
@@ -55,7 +56,7 @@ function Projects() {
             <p>A charming CLI application that allows a user to teach moves to daycare pokemon. Complete with nostalgic sounds. Built with: <span className="emphasis">Ruby</span>, and <span className="emphasis">SQLite</span>.</p>
             <section className="repo-demo-container">
                 <a href="https://github.com/aleksarad/pokemon-trainer" target="_blank" rel="noopener noreferrer">Repo</a>
-                <a href="https://github.com/aleksarad/pokemon-trainer">Demo</a>
+                <a href="https://youtu.be/jjU1xA1RJSc" target="_blank" rel="noopener noreferrer">Demo</a>
             </section>
         </div>
         <p style={{fontSize: '1rem', textAlign: 'center'}} id="project-footer">Portfolio designed and coded by me, check out the repo <span className="emphasis"><a href="https://github.com/aleksarad/aleksarad.github.io">here.</a></span></p>
