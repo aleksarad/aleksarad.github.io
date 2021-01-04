@@ -59,7 +59,7 @@ function Projects() {
                 <a href="https://youtu.be/jjU1xA1RJSc" target="_blank" rel="noopener noreferrer">Demo</a>
             </section>
         </div>
-        <p style={{fontSize: '1rem', textAlign: 'center'}} id="project-footer">Portfolio designed and coded by me, check out the repo <span className="emphasis"><a href="https://github.com/aleksarad/aleksarad.github.io">here.</a></span></p>
+        <p style={{fontSize: '1rem', textAlign: 'center'}} id="project-footer">Portfolio designed and coded by me, check out the repo <span className="emphasis"><a href="https://github.com/aleksarad/aleksarad.github.io" target="_blank" rel="noopener noreferrer" >here.</a></span></p>
     </div>
   );
 }

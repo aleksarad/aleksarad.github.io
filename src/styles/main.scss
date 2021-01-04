@@ -1,4 +1,4 @@
-$accent: rgb(75, 75, 75);
+$accent: rgb(77, 77, 77);
 // $background-color: rgb(230, 255, 251);
 // $pink-accent: rgb(131, 216, 202);
 $font-size: 1.3rem;
@@ -43,9 +43,9 @@ header {
 
 header h1 {
   font-weight: 600;
-  font-size: 4rem;
+  font-size: 3.1rem;
   width: 100%;
-  margin: .8rem 0 .5rem 0;
+  margin: 1rem 0;
   color: rgb(255, 174, 206);
   text-shadow: 1px 1px 1px rgb(119, 23, 63), 1px 1px 1px rgb(180, 65, 113), 1px 0 3px rgb(236, 148, 185),  1px 0 7px rgb(255, 168, 204);
 }
@@ -141,8 +141,8 @@ nav a {
 }
 
 #greetings span {
-  font-size: 1.5rem;
-  font-weight: 500;
+  // font-size: 1.5rem;
+  // font-weight: 500;
 }
 
 footer {
@@ -213,7 +213,7 @@ footer {
   margin-bottom: 4rem;
 }
 
-.project a {
+.project a, .link-home {
   color: $accent;
   background-image: linear-gradient(transparent calc(100% - 2px),rgb(99, 235, 201)1px);
   text-decoration: none;
@@ -224,7 +224,7 @@ footer {
   transition: all .2s;
 }
 
-.project a:hover {
+.project a:hover, .link-home:hover {
   background-size: 0 100%;
 }
 
@@ -272,14 +272,13 @@ footer {
 }
 @media (max-width: 650px) {
   header h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 
 @media (max-width: 425px) {
   header h1 {
     font-size: 2.2rem;
-    margin: 1.5rem 0;
   }
 
   nav {
