@@ -18,7 +18,7 @@ function Home() {
             I have experience building web applications with <span className="emphasis">JavaScript</span>, <span className="emphasis">React</span>, and <span className="emphasis">Ruby on Rails</span>. Check out my <Link className="link-home" to="/projects">work</Link>!
         </p>
         <p>
-            I really love creating art with <span className="emphasis">CSS</span>, which you can take a look at <a href="https://codepen.io/collection/XWmPNK" className="link-home" target="_blank" rel="noopener noreferrer">here.</a>
+            I really love creating art with <span className="emphasis">CSS</span>, which you can take a look at <a href="https://codepen.io/collection/XWmPNK" className="link-home" target="_blank" rel="noopener noreferrer">here</a>.
         </p>
     
     </div>
