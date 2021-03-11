@@ -187,7 +187,7 @@ function Projects() {
           </svg>
         </section>
         <p>
-          A generator that creates the code for custom CSS avatars based on user
+          A generator that outputs the code for custom CSS avatars based on user
           input. Built with: <span className="emphasis">JavaScript</span>,{" "}
           <span className="emphasis">CSS</span> and{" "}
           <span className="emphasis">HTML</span>.
